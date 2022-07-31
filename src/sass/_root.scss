@@ -1,0 +1,22 @@
+:root {
+  --transparent: #ffffff00;
+  --first-bg__color: #fff;
+  --second-bg__color: #212121;
+  --first-text__color: #6c6c6c;
+  --first-text__hover: #5a31f5;
+  --second-text__color: #fff;
+  --second-text__border: #77c8d0;
+  --second-text__bg_color: #77c8d0;
+  --border-button: 1px solid var(--second-text__border);
+}
+
+// удаление высоты над строкой (миксин)
+@mixin lhCrop($line-height) {
+  &::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+}

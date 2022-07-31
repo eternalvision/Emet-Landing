@@ -1,0 +1,48 @@
+.App-header {
+  background-color: var(--second-bg__color);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.Menu {
+  height: 69px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  &:first-child {
+    margin-left: 64px;
+  }
+  &:last-child {
+    ul {
+      font-weight: 700;
+      display: flex;
+      li {
+        margin-right: 40px;
+        color: var(--first-text__color);
+        &:hover {
+          cursor: pointer;
+          color: var(--first-text__hover);
+        }
+        &:nth-child(7) {
+          margin-right: 0px;
+        }
+        &:last-child {
+          margin-right: 64px;
+          margin-left: 54px;
+        }
+      }
+    }
+  }
+}
+
+.Menu-button {
+  color: var(--second-text__color);
+  background-color: var(--transparent);
+  border: var(--border-button);
+  border-radius: 22px;
+  padding: 10px 25px 13px;
+  &:hover {
+    background-color: var(--second-text__bg_color);
+  }
+}
