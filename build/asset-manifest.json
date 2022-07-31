@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38ef4520.css",
+    "main.js": "/static/js/main.2405590a.js",
+    "static/js/787.18820696.chunk.js": "/static/js/787.18820696.chunk.js",
+    "static/media/robogirl.jpg": "/static/media/robogirl.b97f845ba8254bd8c4b4.jpg",
+    "static/media/gilroy-thin.ttf": "/static/media/gilroy-thin.a21a139f0613c0f6f97c.ttf",
+    "static/media/gilroy-regular.ttf": "/static/media/gilroy-regular.b91b0127c56a8e5f9e83.ttf",
+    "static/media/gilroy-bold.ttf": "/static/media/gilroy-bold.b900325e44ec0c673e88.ttf",
+    "static/media/gilroy-heavy.ttf": "/static/media/gilroy-heavy.73c8d039d56e768155e7.ttf",
+    "static/media/betinascriptctt.ttf": "/static/media/betinascriptctt.99bd5308b6baa7138d97.ttf",
+    "static/media/clocks.svg": "/static/media/clocks.3792f3804cfa156439eb25e0ebf840b6.svg",
+    "static/media/Logo.svg": "/static/media/Logo.51b3c034762b7f7fe6ba82d158fedb41.svg",
+    "static/media/questioning.svg": "/static/media/questioning.4de4227462e1e3aef070c2c8c00a5d97.svg",
+    "static/media/mouthpiece.svg": "/static/media/mouthpiece.18a6af824be57ed106985d71781d6dbf.svg",
+    "static/media/headphones.svg": "/static/media/headphones.4de34d9e447940678c95f0f5806f2a03.svg",
+    "static/media/mail.svg": "/static/media/mail.f9f2f257bf131d7cd0ab2ad94e17ef5d.svg",
+    "static/media/telephone.svg": "/static/media/telephone.5c3cf54ef75bfe4c6d7c946bd69cbed6.svg",
+    "static/media/check.svg": "/static/media/check.a11e5e61b4ba6725d2a0f5ca9f9e3dd8.svg",
+    "index.html": "/index.html",
+    "main.38ef4520.css.map": "/static/css/main.38ef4520.css.map",
+    "main.2405590a.js.map": "/static/js/main.2405590a.js.map",
+    "787.18820696.chunk.js.map": "/static/js/787.18820696.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ef4520.css",
+    "static/js/main.2405590a.js"
+  ]
+}

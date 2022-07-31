@@ -327,6 +327,15 @@ function Main() {
             <span>з більшістю корпоративних систем</span>
           </li>
         </ul>
+        <Link
+          to="benefits"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          &#8593;безперечні переваги
+        </Link>
       </section>
       <section className="Buttons">
         <ul>
