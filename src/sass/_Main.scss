@@ -28,11 +28,12 @@
   .Main-title {
     margin-left: 128px;
     margin-top: 19px;
-    width: 1175px;
+    max-width: 1175px;
     p {
       color: var(--first-text__color);
       text-transform: lowercase;
       font-size: 24px;
+      display: inline;
     }
     h1 {
       color: var(--first-bg__color);
@@ -332,10 +333,10 @@
     li {
       padding: 20px;
       span {
+        width: 235px;
         display: flex;
         text-align: center;
         justify-content: center;
-        width: 235px;
         height: 235px;
         border-radius: 7px;
         color: var(--first-bg__color);
@@ -488,6 +489,309 @@
     color: #fff;
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .Greetings .Main-title {
+    margin-left: 70px;
+  }
+  .Areas-of-use {
+    div {
+      &:last-child {
+        ul {
+          column-count: 2;
+        }
+      }
+      &:first-child {
+        h2 {
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+  .Usage {
+    div {
+      &:last-child {
+        display: none;
+      }
+      &:first-child {
+        ul,
+        h2 {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+
+  .Capabilities {
+    div {
+      ul {
+        column-count: 2;
+      }
+    }
+  }
+  .Example {
+    padding: 100px 70px;
+  }
+  .Technical-advantages {
+    ul {
+      align-content: space-between;
+      flex-wrap: wrap;
+      li {
+        span {
+          max-width: 235px;
+        }
+      }
+    }
+  }
+
+  .Menu {
+    &:last-child {
+      ul {
+        li {
+          margin-right: 7px;
+          &:last-child {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .Form {
+    div {
+      &:first-child {
+        h2 {
+          font-size: 56px;
+        }
+      }
+      &:last-child {
+        ul {
+          li {
+            input,
+            textarea {
+              max-width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Form-button {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Capabilities {
+    div {
+      ul {
+        column-count: 1;
+      }
+    }
+  }
+  .Menu {
+    overflow-x: scroll;
+
+    &:first-child {
+      margin-left: 5px;
+    }
+    &:last-child {
+      ul {
+        li {
+          flex-wrap: nowrap !important;
+          a {
+            font-size: 14px;
+          }
+          margin-right: 7px;
+          &:last-child {
+            margin-left: 0px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .Areas-of-use {
+    div {
+      &:last-child {
+        ul {
+          column-count: 1;
+        }
+      }
+    }
+  }
+  .Advances {
+    ul {
+      column-count: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Areas-of-use {
+    div {
+      &:first-child {
+        p,
+        h2 {
+          padding-left: 30px;
+        }
+      }
+      &:last-child {
+        ul {
+          column-count: 1;
+        }
+      }
+    }
+  }
+  .Advances {
+    p {
+      padding-left: 30px;
+    }
+    ul {
+      column-count: 1;
+    }
+  }
+  .Example {
+    padding: 100px 30px;
+  }
+  .Usage {
+    padding: 0px 60px 92px 60px;
+  }
+  .Greetings {
+    .Main-title {
+      margin-left: 30px;
+    }
+    .Lastly-span {
+      margin-left: 100px;
+    }
+  }
+  .Form {
+    padding-top: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    div {
+      &:first-child {
+        h2 {
+          padding-bottom: 50px;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .Buttons {
+    ul {
+      li {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  .Menu {
+    &:first-child {
+      margin-left: 20px;
+    }
+    &:last-child {
+      ul {
+        li {
+          margin-left: 7px;
+          margin-right: 7px;
+          text-align: center;
+
+          &:last-child {
+            width: 220px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 375px) {
+  .Areas-of-use {
+    div {
+      &:first-child {
+        h2 {
+          font-size: 30px;
+        }
+      }
+      &:last-child {
+        ul {
+          li {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .Capabilities {
+    div {
+      ul {
+        li {
+          width: auto;
+        }
+      }
+    }
+  }
+  .Buttons {
+    ul {
+      display: none;
+    }
+  }
+}
+@media screen and(max-width: 320px) {
+  .Usage {
+    padding: 0px 0px 92px 50px;
+    div {
+      &:first-child {
+        h2 {
+          font-size: 32px;
+        }
+        ul {
+          li {
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+  .Greetings {
+    .Main-title {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .Firstly-spans {
+      span {
+        &:first-child {
+          padding-top: 50px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Usage {
+    div {
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .Buttons {
+    ul {
+      display: flex;
     }
   }
 }
