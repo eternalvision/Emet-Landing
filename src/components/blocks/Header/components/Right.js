@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Button from './Button';
 
 function Menu() {
@@ -76,18 +76,6 @@ function Menu() {
             duration={500}
           >
             можливості
-          </Link>
-        </li>
-        <li>
-          <Link
-            activeClass="active"
-            to="details"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            уточнити деталі
           </Link>
         </li>
         <li>

@@ -1,0 +1,12 @@
+.Footer {
+  height: 192px;
+  background-color: var(--second-bg__color);
+  display: flex;
+  align-items: center;
+  a img {
+    padding-left: 63px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

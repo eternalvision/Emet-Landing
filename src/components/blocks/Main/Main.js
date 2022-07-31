@@ -1,9 +1,7 @@
 import React from 'react';
 import { svgImages } from '../../../img';
 import { robogirl } from '../../../img';
-import { Link, animateScroll as scroll } from 'react-scroll';
-// import { HandySvg } from 'handy-svg';
-// import { Link } from "react-router-dom";
+import { Link } from 'react-scroll';
 
 function Main() {
   return (
@@ -22,7 +20,7 @@ function Main() {
           </h1>
           <div>
             <Link
-              to="#"
+              to="details"
               spy={true}
               smooth={true}
               offset={-70}
@@ -77,23 +75,25 @@ function Main() {
         </div>
       </section>
       <section className="Example" id="example">
-        <p>приклад застосування Emet</p>
-        <h2>
-          клієнти, які спілкуються з EMET’ом,{' '}
-          <span>
-            не можуть <br /> відрізнити{' '}
-          </span>
-          його<span> від живого оператора</span>
-        </h2>
-        <audio
-          controls
-          src="https://4service.group/wp-content/uploads/2022/04/EMET_NPS_UKRPOST_3.mp3"
-        ></audio>
+        <div>
+          <p>приклад застосування Emet</p>
+          <h2>
+            клієнти, які спілкуються з EMET’ом,{' '}
+            <span>
+              не можуть <br /> відрізнити{' '}
+            </span>
+            його<span> від живого оператора</span>
+          </h2>
+          <audio
+            controls
+            src="https://4service.group/wp-content/uploads/2022/04/EMET_NPS_UKRPOST_3.mp3"
+          ></audio>
+        </div>
       </section>
       <section className="Areas-of-use">
         <div>
-          <p id="areasofuse">
-            області застосування EMET<span>.</span>
+          <p>
+            області застосування EMET<span id="areasofuse">.</span>
           </p>
           <h2>
             <span>ЕМЕТ. </span>
@@ -178,8 +178,9 @@ function Main() {
         </div>
       </section>
       <section className="Advances">
-        <p id="benefits">
-          безперечні переваги ЕМЕТА перед живими операторами<span>.</span>
+        <p>
+          безперечні переваги ЕМЕТА перед живими операторами
+          <span id="benefits">.</span>
         </p>
         <div>
           <ul>
@@ -230,12 +231,169 @@ function Main() {
           </ul>
         </div>
 
-        <Link> техничнi переваги</Link>
+        <Link
+          to="technicaladvantages"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          &#8595; техничнi переваги
+        </Link>
       </section>
-      <section>
+      <section className="Capabilities">
         <p>
-          які проблеми вирішує<span>.</span>
+          які проблеми вирішує<span id="capabilities">.</span>
         </p>
+        <div>
+          <ul>
+            <li>
+              <p>Пошук проблемних діалогів</p>
+              <p>
+                Знаходьте проблеми за ключовими словами або відхилення
+                кількісних параметрів від норми
+              </p>
+            </li>
+            <li>
+              <p>Підвищення дисципліни</p>
+              <p>
+                Оператори починають працювати краще, коли знають, що дзвінки
+                аналізуються
+              </p>
+            </li>
+            <li>
+              <p>Захист від витоків інформації</p>
+              <p>
+                Знаходьте загрози відведення клієнтів за ключовими словами:
+                «Відправлю номер», «Запишіть номер», «Перезвоню з мобільного» і
+                т.д.
+              </p>
+            </li>
+            <li>
+              <p>Аналіз роботи операторів</p>
+              <p>
+                Контролюйте операторів, у розмовах із якими клієнти зазнають
+                складнощів
+              </p>
+            </li>
+            <li>
+              <p>Зниження непрофільного навантаження</p>
+              <p>
+                Аналізуйте причини затягнутих розмов, систематизуйте теми
+                звернень
+              </p>
+            </li>
+            <li>
+              <p>Пошук точок зростання</p>
+              <p>Клієнти самі розповідають про свої проблеми та побажання</p>
+            </li>
+            <li>
+              <p>Скорочення кількості повторних звернень</p>
+              <p>
+                Розширюйте скрипти операторів та базу знань компанії на основі
+                даних із діалогів
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="Technical-advantages" id="technicaladvantages">
+        <p>
+          технічні переваги<span>.</span>
+        </p>
+        <ul>
+          <li>
+            <span>
+              МАСШТАБОВА <br /> НІСТЬ
+            </span>
+            <span>
+              навчається при кожному дзвінку, з кожним разом стає ще розумнішим
+            </span>
+          </li>
+          <li>
+            <span>
+              НЕЙРОННІ <br /> МЕРЕЖІ
+            </span>
+            <span>може повністю взяти на себе вхідні та вихідні дзвінки</span>
+          </li>
+          <li>
+            <span>
+              ГНУЧКА <br /> ЗВІТНІСТЬ
+            </span>
+            <span>приймає та здійснює необмежену кількість дзвінків</span>
+          </li>
+          <li>
+            <span>ІНТЕГРАЦІЯ</span>
+            <span>з більшістю корпоративних систем</span>
+          </li>
+        </ul>
+      </section>
+      <section className="Buttons">
+        <ul>
+          <li>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="details"
+            >
+              замовити послугу
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="details"
+            >
+              уточнити деталі
+            </Link>
+          </li>
+        </ul>
+      </section>
+      <section className="Form" id="details">
+        <div>
+          <h2>
+            Ми будемо <br /> раді <br /> допомогти <br /> Вам <br />{' '}
+            <span className="Form-title">покращити </span>
+            <span>
+              <br />
+              бізнес
+            </span>
+          </h2>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <p>Имя</p>
+              <input type="text" />
+            </li>
+            <li>
+              <p>Компания</p>
+              <input type="text" />
+            </li>
+            <li>
+              <p>Номер телефона</p>
+              <input type="tel" />
+            </li>
+            <li>
+              <p>Email</p>
+              <input type="email" />
+            </li>
+            <li>
+              <p>Ваш вопрос</p>
+              <textarea rows="3"></textarea>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="Form-button">
+        <input type="submit" value="Отправить"></input>
       </section>
     </main>
   );

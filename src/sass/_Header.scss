@@ -5,6 +5,14 @@
   z-index: 3;
 }
 
+.Logo {
+  a {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .Menu {
   height: 69px;
   align-items: center;
